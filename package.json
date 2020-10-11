@@ -1,0 +1,25 @@
+{
+  "name": "@boilerplate/boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "project-devrun --watch ./.build --inspect 9230 --program ./.build/tests",
+    "build": "ttsc && project-pack",
+    "watch": "ttsc -watch",
+    "lint": "tslint",
+    "test": "node ./.build/tests"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "@types/vscode": "^1.39.0",
+    "source-map-support": "^0.5.19",
+    "tslib": "1.9.3",
+    "tslint": "^5.16.0",
+    "ttypescript": "^1.5.10",
+    "typescript": "^3.5.1",
+    "typescript-transform-paths": "^1.1.14",
+    "tools": "./tools"
+  }
+}
